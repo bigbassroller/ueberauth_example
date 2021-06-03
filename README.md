@@ -1,5 +1,5 @@
 # Überauth Example
-![](https://github.com/ueberauth/ueberauth_example/workflows/Elixir%20CI/badge.svg?event=push) [![License][license-img]][license]
+![](https://github.com/ueberauth/my_app/workflows/Elixir%20CI/badge.svg?event=push) [![License][license-img]][license]
 
 [license-img]: http://img.shields.io/badge/license-MIT-brightgreen.svg
 [license]: http://opensource.org/licenses/MIT
@@ -46,8 +46,8 @@ In this example we'll use five strategies:
 1. Clone the project:
 
 	```shell
-	$ git clone git@github.com:ueberauth/ueberauth_example.git
-	$ cd ueberauth_example
+	$ git clone git@github.com:ueberauth/my_app.git
+	$ cd my_app
 	```
 
 1. Fetch dependencies:
@@ -70,4 +70,4 @@ See [Überauth](https://github.com/ueberauth/ueberauth) for detailed instruction
 
 ## License
 
-Please see [LICENSE](https://github.com/ueberauth/ueberauth_example/blob/master/LICENSE) for licensing details.
+Please see [LICENSE](https://github.com/ueberauth/my_app/blob/master/LICENSE) for licensing details.

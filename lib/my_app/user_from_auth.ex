@@ -1,4 +1,4 @@
-defmodule UeberauthExample.UserFromAuth do
+defmodule MyApp.UserFromAuth do
   @moduledoc """
   Retrieve the user information from an auth request
   """

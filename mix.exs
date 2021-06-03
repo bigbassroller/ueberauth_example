@@ -1,9 +1,9 @@
-defmodule UeberauthExample.MixProject do
+defmodule MyApp.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :ueberauth_example,
+      app: :my_app,
       version: "0.0.1",
       elixir: "~> 1.11",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule UeberauthExample.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {UeberauthExample.Application, []},
+      mod: {MyApp.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

@@ -1,4 +1,4 @@
-defmodule UeberauthExampleWeb.ConnCase do
+defmodule MyAppWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -15,12 +15,12 @@ defmodule UeberauthExampleWeb.ConnCase do
       # Import conveniences for testing with connections
       import Plug.Conn
       import Phoenix.ConnTest
-      import UeberauthExampleWeb.ConnCase
+      import MyAppWeb.ConnCase
 
-      alias UeberauthExampleWeb.Router.Helpers, as: Routes
+      alias MyAppWeb.Router.Helpers, as: Routes
 
       # The default endpoint for testing
-      @endpoint UeberauthExampleWeb.Endpoint
+      @endpoint MyAppWeb.Endpoint
     end
   end
 

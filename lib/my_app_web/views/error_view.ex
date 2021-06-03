@@ -1,5 +1,5 @@
-defmodule UeberauthExampleWeb.ErrorView do
-  use UeberauthExampleWeb, :view
+defmodule MyAppWeb.ErrorView do
+  use MyAppWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

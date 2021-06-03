@@ -1,4 +1,4 @@
-defmodule UeberauthExampleWeb.Telemetry do
+defmodule MyAppWeb.Telemetry do
   @moduledoc false
 
   use Supervisor
@@ -33,11 +33,11 @@ defmodule UeberauthExampleWeb.Telemetry do
       ),
 
       # Database Metrics
-      summary("ueberauth_example.repo.query.total_time", unit: {:native, :millisecond}),
-      summary("ueberauth_example.repo.query.decode_time", unit: {:native, :millisecond}),
-      summary("ueberauth_example.repo.query.query_time", unit: {:native, :millisecond}),
-      summary("ueberauth_example.repo.query.queue_time", unit: {:native, :millisecond}),
-      summary("ueberauth_example.repo.query.idle_time", unit: {:native, :millisecond}),
+      summary("my_app.repo.query.total_time", unit: {:native, :millisecond}),
+      summary("my_app.repo.query.decode_time", unit: {:native, :millisecond}),
+      summary("my_app.repo.query.query_time", unit: {:native, :millisecond}),
+      summary("my_app.repo.query.queue_time", unit: {:native, :millisecond}),
+      summary("my_app.repo.query.idle_time", unit: {:native, :millisecond}),
 
       # VM Metrics
       summary("vm.memory.total", unit: {:byte, :kilobyte}),
@@ -51,7 +51,7 @@ defmodule UeberauthExampleWeb.Telemetry do
     [
       # A module, function and arguments to be invoked periodically.
       # This function must call :telemetry.execute/3 and a metric must be added above.
-      # {UeberauthExampleWeb, :count_users, []}
+      # {MyAppWeb, :count_users, []}
     ]
   end
 end

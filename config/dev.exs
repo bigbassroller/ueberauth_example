@@ -6,7 +6,7 @@ import Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :ueberauth_example, UeberauthExampleWeb.Endpoint,
+config :my_app, MyAppWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -22,12 +22,12 @@ config :ueberauth_example, UeberauthExampleWeb.Endpoint,
   ]
 
 # Watch static and templates for browser reloading.
-config :ueberauth_example, UeberauthExampleWeb.Endpoint,
+config :my_app, MyAppWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
-      ~r"lib/ueberauth_example_web/views/.*(ex)$",
-      ~r"lib/ueberauth_example_web/templates/.*(eex)$"
+      ~r"lib/my_app_web/views/.*(ex)$",
+      ~r"lib/my_app_web/templates/.*(eex)$"
     ]
   ]
 

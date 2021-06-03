@@ -1,14 +1,14 @@
-defmodule UeberauthExampleWeb.AuthController do
+defmodule MyAppWeb.AuthController do
   @moduledoc """
   Auth controller responsible for handling Ueberauth responses
   """
 
-  use UeberauthExampleWeb, :controller
+  use MyAppWeb, :controller
 
   plug Ueberauth
 
   alias Ueberauth.Strategy.Helpers
-  alias UeberauthExample.UserFromAuth
+  alias MyApp.UserFromAuth
 
   def request(conn, _params) do
     render(conn, "request.html", callback_url: Helpers.callback_url(conn))

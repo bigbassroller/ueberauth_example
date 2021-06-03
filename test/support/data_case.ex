@@ -1,4 +1,4 @@
-defmodule UeberauthExample.DataCase do
+defmodule MyApp.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -13,7 +13,7 @@ defmodule UeberauthExample.DataCase do
     quote do
       import Ecto
       import Ecto.Changeset
-      import UeberauthExample.DataCase
+      import MyApp.DataCase
     end
   end
 

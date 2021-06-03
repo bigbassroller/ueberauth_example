@@ -1,4 +1,4 @@
-defmodule UeberauthExampleWeb.ErrorHelpers do
+defmodule MyAppWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """

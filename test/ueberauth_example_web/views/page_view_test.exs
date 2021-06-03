@@ -1,3 +1,3 @@
-defmodule UeberauthExampleWeb.PageViewTest do
-  use UeberauthExampleWeb.ConnCase, async: true
+defmodule MyAppWeb.PageViewTest do
+  use MyAppWeb.ConnCase, async: true
 end

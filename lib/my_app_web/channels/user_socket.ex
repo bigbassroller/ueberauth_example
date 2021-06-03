@@ -1,10 +1,10 @@
-defmodule UeberauthExampleWeb.UserSocket do
+defmodule MyAppWeb.UserSocket do
   @moduledoc false
 
   use Phoenix.Socket
 
   ## Channels
-  # channel "rooms:*", UeberauthExample.RoomChannel
+  # channel "rooms:*", MyApp.RoomChannel
 
   # Socket params are passed from the client and can
   # be used to verify and authenticate a user. After
@@ -29,7 +29,7 @@ defmodule UeberauthExampleWeb.UserSocket do
   # Would allow you to broadcast a "disconnect" event and terminate
   # all active sockets and channels for a given user:
   #
-  #     alias UeberauthExample.Endpoint
+  #     alias MyApp.Endpoint
   #     Endpoint.broadcast("users_socket:" <> user.id, "disconnect", %{})
   #
   # Returning `nil` makes this socket anonymous.

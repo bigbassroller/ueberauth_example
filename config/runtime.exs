@@ -31,7 +31,7 @@ case config_env() do
         You can generate one by calling: mix phx.gen.secret
         """
 
-    config :ueberauth_example, UeberauthExampleWeb.Endpoint,
+    config :my_app, MyAppWeb.Endpoint,
       http: [
         port: String.to_integer(System.get_env("PORT") || "4000"),
         transport_options: [socket_opts: [:inet6]]

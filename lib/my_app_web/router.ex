@@ -1,7 +1,7 @@
-defmodule UeberauthExampleWeb.Router do
+defmodule MyAppWeb.Router do
   @moduledoc false
 
-  use UeberauthExampleWeb, :router
+  use MyAppWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -15,7 +15,7 @@ defmodule UeberauthExampleWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/auth", UeberauthExampleWeb do
+  scope "/auth", MyAppWeb do
     pipe_through :browser
 
     get "/:provider", AuthController, :request
@@ -24,7 +24,7 @@ defmodule UeberauthExampleWeb.Router do
     delete "/logout", AuthController, :delete
   end
 
-  scope "/", UeberauthExampleWeb do
+  scope "/", MyAppWeb do
     pipe_through :browser
 
     get "/", PageController, :index

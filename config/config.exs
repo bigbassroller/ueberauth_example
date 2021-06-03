@@ -8,11 +8,11 @@
 import Config
 
 # Configures the endpoint
-config :ueberauth_example, UeberauthExampleWeb.Endpoint,
+config :my_app, MyAppWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "cmFHOAeb4fOkx/XBcXe0pnKNfgcuicWd0eVrvIb8vZlEQRb1nnvaWcs7dTABVcdN",
-  render_errors: [view: UeberauthExampleWeb.ErrorView, accepts: ~w(html json), layout: false],
-  pubsub_server: UeberauthExample.PubSub
+  render_errors: [view: MyAppWeb.ErrorView, accepts: ~w(html json), layout: false],
+  pubsub_server: MyApp.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,
